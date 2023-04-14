@@ -6,7 +6,7 @@ RUN apt update \
     && curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
     && unzip awscliv2.zip \
     && ./aws/install \
-    && curl -L https://github.com/pantheon-systems/terminus/releases/download/3.1.3/terminus.phar --output terminus.phar \
+    && curl -L https://github.com/pantheon-systems/terminus/releases/download/3.1.5/terminus.phar --output terminus.phar \
     && chmod +x terminus.phar \
     && mv terminus.phar /usr/local/bin/terminus \
     && rm -rf /tmp/* /var/tmp/* \
